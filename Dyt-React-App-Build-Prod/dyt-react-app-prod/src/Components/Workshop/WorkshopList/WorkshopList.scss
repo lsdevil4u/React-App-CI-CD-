@@ -1,0 +1,101 @@
+@import '../../../Constant/color.scss';
+
+.workshops_list {
+    background-color: black;
+    min-height: 100vh;
+    max-height: fit-content;
+    height: 100%;
+    margin: 0;
+
+    .content {
+        min-height: 100vh;
+        max-height: fit-content;
+    }
+
+    .WorkshopList_card-list-layout {
+        margin-top: 2rem;
+        display: flex;
+        // flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 4rem;
+        gap: 2.5rem;
+        margin-bottom: 4rem;
+
+        .WorkshopList_card-list-plot {
+            width: 25%;
+            // margin-right: 3%;
+            margin-top: 2rem;
+            margin-left: -1.9rem;
+        }
+    }
+
+    // .search-bar-list {
+    //     margin: 3rem 0 1rem 6rem;
+    // }
+
+    .Noworkshops {
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin: 17.5rem;
+    }
+
+    h1 {
+        margin-left: 4.3rem;
+    }
+
+    .fixed-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    // .footer {
+    //     position: fixed;
+    //     bottom: 0;
+    //     width: 100%;
+    // }
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+    .workshops_list {
+        padding: 1rem 2rem 0 2rem;
+
+        .WorkshopList_card-list-layout {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            // width: 42rem;
+        }
+
+        .WorkshopList_card-list-plot {
+            width: 30rem;
+            // margin-right: 3%;
+            margin-top: 2rem;
+        }
+
+        .search-bar-list {
+            margin: 1rem 0 0rem -1.1rem;
+        }
+
+        h1 {
+            margin-left: 1rem;
+        }
+
+        .footer {
+            margin-top: 8rem;
+            padding: 0;
+            width: 100%;
+        }
+
+
+
+        .Noworkshops {
+            text-align: center;
+            align-items: center;
+            font-size: 1.5rem;
+            margin: 25rem 0;
+        }
+    }
+}

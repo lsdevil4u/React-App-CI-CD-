@@ -1,0 +1,52 @@
+@import '../../../Constant/color.scss';
+
+.workshops_list {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+
+    .content {
+        min-height: 100vh;
+        max-height: fit-content;
+    }
+
+    .WorkshopList_card-list-layout {
+        margin-top: 2rem;
+        display: flex;
+        // flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 5rem;
+
+        .WorkshopList_card-list-plot {
+            width: 25%;
+            // margin-right: 3%;
+            margin-top: 2rem;
+        }
+    }
+
+    .noWorkshops {
+        text-align: center;
+        align-items: center;
+        margin: 20rem 0;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        margin-left: 6rem;
+    }
+
+    .fixed-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    @media screen and (min-width:300px) and (max-width: 600px) {
+        h1 {
+            margin-left: 0rem;
+        }
+    }
+
+
+}

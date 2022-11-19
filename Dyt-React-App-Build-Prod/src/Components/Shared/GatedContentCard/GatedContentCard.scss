@@ -1,0 +1,96 @@
+@import '../../../Constant/color.scss';
+
+.gated-content-page {
+    // background-color: $studio-background;
+    font-family: $font-family;
+    // height: 100vh;
+
+    &_card-layout {
+        // background-color: black;
+        width: 30rem;
+        // height: 24rem;
+        margin: auto;
+        background: none;
+        border: none;
+        border-radius: 0%;
+        transform: all .5s;
+    }
+
+    &_card-layout:hover {
+        transform: scale(1.02);
+        // transform: translateY(-6px);
+        box-shadow: 0px 0px 10px #7000FF;
+    }
+
+    .card {
+        background: none;
+    }
+
+    // .img-fluid {
+    //     box-shadow: 5px 10px 20px 5px Green inset;
+    //     width: 30rem;
+    // }
+
+    .cover-image {
+        width: 30rem;
+        height: 24rem;
+        object-fit: cover;
+        border: none;
+        // position: relative;
+        // z-index: -2222;
+    }
+
+    .card-footer {
+        width: 29.95rem;
+        height: fit-content;
+        background-color: #bf9aef44;
+        color: $white;
+        font-size: 1.6rem;
+        padding: .5rem .8rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+
+        &_status {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .card-img-overlay {
+        margin-top: 16rem;
+        background: rgba(8, 0, 8, 0.6);
+        width: 101%;
+        height: 8rem;
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: 700;
+            // color: $studio-primary;
+        }
+
+        .card-text {
+            &_content-heading {
+                color: $sub-text;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            &_content {
+                font-size: 1.5rem;
+                margin-left: .5rem;
+                font-weight: 600;
+                // color: $studio-primary;
+            }
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 500px) {
+        &_card-layout {
+            // background-color: black;
+            width: 30rem;
+        }
+    }
+
+}

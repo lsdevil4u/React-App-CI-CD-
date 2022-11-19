@@ -1,0 +1,124 @@
+@import '../../../Constant/color.scss';
+
+.login_otp {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    font-style: $font-style;
+
+    .count-otp {
+        font-size: 1.3rem;
+        font-family: $font-family;
+        color: $log-text;
+        text-align: left;
+        font-style: $font-style;
+
+    }
+
+    .otp-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .otp {
+        display: flex;
+        margin-left: auto;
+
+    }
+
+    .otp input {
+        width: 3.1rem;
+        height: 3.1rem;
+        padding: 0 .6rem 0 1.2rem;
+        font-size: 1.5rem;
+        background: $input-bg;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        color: $white;
+        transition: all .3s ease;
+
+    }
+
+    .otp input:focus {
+        border: 2px solid $border-gradient1;
+        box-shadow: 0 0 2px 2px $border-gradient1;
+    }
+
+    .spacing {
+        margin-right: .4rem !important;
+    }
+
+    .re-otp {
+        color: $studio-primary;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-family: $font-family;
+        font-style: $font-style;
+    }
+
+    .timer {
+        color: $studio-primary;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+
+    .resend-otp {
+        font-size: 1.2rem;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-container {
+        display: flex;
+        width: 8rem;
+        height: 3rem;
+        background: none;
+        border: 1px solid $white;
+        padding: .5rem;
+        border-radius: 4px;
+        text-align: center;
+        align-items: center;
+        color: $white;
+        font-size: .8rem;
+        font-weight: 400;
+        font-family: $font-family;
+        font-style: normal;
+        text-transform: capitalize;
+        // margin-left: auto;
+        margin-right: .3rem;
+        cursor: pointer;
+    }
+
+    .social-icon {
+        width: 1.5rem;
+        height: 1.2rem;
+        margin-right: .4rem;
+    }
+
+    .mail {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem;
+        font-size: 1.3rem;
+
+        .social-icon {
+            width: 1.3rem;
+            // margin-left: .7rem;
+        }
+    }
+
+}

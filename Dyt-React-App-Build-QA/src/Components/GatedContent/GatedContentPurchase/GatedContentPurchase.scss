@@ -1,0 +1,339 @@
+@import '../../../Constant/color.scss';
+
+.gated-content-purchasePage {
+    height: fit-content;
+    // background: black;
+
+    .header {
+        position: fixed;
+        top: 1%;
+        left: 2%;
+    }
+
+    .gated-content-cardbody {
+        position: fixed;
+        top: 47%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+
+
+    .locked-container {
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        position: fixed;
+        top: 47%;
+        right: 65%;
+        transform: translate(50%, -50%);
+    }
+
+    .locked-form {
+        position: fixed;
+        top: 47%;
+        right: 60%;
+    }
+
+    .display-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .card-img-overlay {
+    //     border: 2px solid black;
+    // }
+
+    .payment-locked {
+        border: none;
+        border-radius: none;
+        background: none;
+
+
+        .img-fluid {
+            width: 28rem;
+            height: 32rem;
+            background: none;
+            border-radius: 0;
+            box-shadow: 6px 6px $studio-primary;
+
+            .cover-image {
+                width: 28rem;
+                height: 28rem;
+                object-fit: cover;
+                filter: blur(15px);
+
+                border: 1px solid black;
+            }
+
+            .thumbnail-Pic {
+                width: 5rem;
+                height: 5rem;
+                display: flex;
+                gap: 2rem;
+
+                .card-title-image {
+                    width: 5rem;
+                    height: 5rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+                .name {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    width: auto;
+                    position: absolute;
+                    top: 1rem;
+                }
+
+                .pic-details {
+                    font-size: 1.3rem;
+                    color: $sub-text;
+                    position: absolute;
+                    top: 3.5rem;
+
+                }
+            }
+
+            .card-text {
+                .lock-image {
+                    width: 7.5rem;
+                    margin: 5rem 0 0 9rem;
+                }
+            }
+
+            .payment-button {
+                width: 100%;
+                padding: .6rem;
+                background: $studio-secondary;
+                border: none;
+                margin-top: 4rem;
+                transform: all .2s;
+            }
+
+            .payment-button:active {
+                transform: scale(.9);
+            }
+
+            .payment-footer {
+                background: #FFB800;
+                width: 100%;
+                padding: 0.5rem;
+                font-weight: 500;
+
+            }
+
+        }
+
+        .coupon-code-container {
+            background-color: #292230;
+            width: 100%;
+            height: fit-content;
+            padding: 1rem;
+            margin-top: 3rem;
+
+            // display: flex;
+            .coupon-codetext {
+                gap: 1.3rem;
+                display: flex;
+            }
+
+            .coupounIcon {
+                width: 3rem;
+                height: 3rem;
+                // margin-top: .5rem;
+            }
+
+            .coupountext {
+                font-size: 1rem;
+                width: 18rem;
+            }
+
+            .expires-text {
+                color: #FFB800;
+                margin: 0rem 0 0 4.3rem;
+            }
+        }
+
+    }
+
+    .form-side {
+        width: 30rem;
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, $border-gradient1, $border-gradient2);
+        border-image-slice: 1;
+        padding: 8px 20px 10px 20px;
+        // border-radius: 3rem;
+        background: #1C1721;
+        position: fixed;
+        top: 47%;
+        right: 33%;
+        transform: translate(50%, -50%);
+
+        .progress-status {
+            font-size: 1.5rem;
+        }
+
+        .warnings {
+            color: $warning-text;
+            font-size: 1.2rem;
+        }
+
+        .input-box {
+            width: 100%;
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+            border-radius: 0.3rem;
+            // margin-top: 0.5rem;
+        }
+
+        .warning-textbox {
+            border: 1px solid $warning-text;
+        }
+
+        div {
+            font-size: 1.2rem;
+            margin-top: .5rem;
+        }
+
+        .payment-btn {
+            width: 100%;
+        }
+    }
+
+    .unlocked-content-card {
+        position: fixed;
+        top: 20%;
+        right: 43%;
+
+
+        .img-fluid {
+            width: 23rem;
+            height: 28rem;
+            background: none;
+            border-radius: 0;
+            // box-shadow: 6px 6px $studio-primary;
+            box-shadow: 5px 5px 0px 0px $studio-primary;
+
+            .cover-img {
+                width: 23rem;
+                height: 28rem;
+                object-fit: cover;
+                // border: 1px solid black;
+            }
+
+            .card-title {
+                backdrop-filter: blur(30px);
+                width: 16.4vw;
+                margin: -11px 0 0 -10px;
+                height: 5rem;
+                padding: 0.4rem;
+            }
+
+            .thumbnail-Pic {
+                width: 4rem;
+                height: 4rem;
+                // filter: blur(3px);
+                display: flex;
+
+
+                .card-title-image {
+                    width: 4rem;
+                    height: 4rem;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+                .name {
+                    margin-left: 5rem;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    width: auto;
+                    position: absolute;
+                    top: 1rem;
+                }
+
+                .pic-details {
+                    margin-left: 5rem;
+                    font-size: 1rem;
+                    color: $sub-text;
+                    position: absolute;
+                    top: 2.8rem;
+
+                }
+            }
+
+            .card-text {
+                height: 7rem;
+                overflow: hidden;
+                width: 22.8rem;
+                backdrop-filter: blur(3px);
+                margin: 14.6rem 0 0 -8px;
+                padding: 1rem;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+        }
+
+        .download-button {
+            background-color: $studio-secondary;
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            margin: 3rem 0 0 .5rem;
+            transform: all .2s;
+
+            .download-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        .download-button:active {
+            transform: scale(.9);
+        }
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0%;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 700px) {
+        .locked-form {
+            position: fixed;
+            top: 47%;
+            right: 49%;
+        }
+
+        .locked-container {
+
+            position: fixed;
+            top: 47%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .unlocked-content-card {
+            position: fixed;
+            top: 25%;
+            right: 21%;
+
+            .img-fluid {
+                width: 23rem;
+                height: 28rem;
+                background: none;
+                border-radius: 0;
+                // box-shadow: 6px 6px $studio-primary;
+                box-shadow: 5px 5px 0px 0px $studio-primary;
+            }
+        }
+    }
+
+
+}

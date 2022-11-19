@@ -1,0 +1,982 @@
+@import '../../Constant/color.scss';
+
+* {
+    font-family: $font-family;
+    font-style: $font-style;
+    color: $white;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.background-mainscreen {
+    background: black;
+    height: fit-content;
+    // width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    .background {
+        background: black;
+        padding-left: 7.6rem;
+        padding-right: 7.6rem;
+        height: fit-content;
+    }
+
+    .home-page {
+        position: relative;
+
+        .home-page-bgVideo {
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+
+        min-height: 100vh;
+        height: 100vh;
+        // width: 101.9%;
+        width: 100%;
+        background-image: url(../../../public/Assests/Images/Homebackground.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        margin: 0;
+        // background-repeat: no-repeat;
+
+        .fa-solid {
+            color: red;
+        }
+
+        .cover-text {
+            font-family: $font-family;
+            font-style: $font-style;
+            // display: flex;
+            margin-left: 8rem;
+            margin-top: 10rem;
+            width: auto;
+            height: fit-content;
+            color: $white;
+            text-transform: capitalize;
+
+            .homescreen-quotes {
+                font-size: 2.5rem;
+            }
+        }
+
+        .cover-text .haeding {
+            font-size: 6rem;
+            font-weight: 700;
+
+            // background: linear-gradient(to bottom right, #1FD1F9, #B621FE 47%);
+            // -webkit-text-fill-color: transparent;
+            // -webkit-background-clip: text;
+
+            // padding: 1rem;
+            font-weight: 700;
+            border: 1px solid transparent;
+
+            // width: 16rem;
+            background: $blue;
+            text-transform: uppercase;
+            background-image: linear-gradient(-225deg,
+                    white 0%,
+                    #44107a 29%,
+                    $studio-primary 67%,
+                    $studio-primary 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 40% auto;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            // font-size: 1.5rem;
+
+
+
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .num {
+            font-size: 6.5rem;
+            font-weight: 500;
+        }
+
+        .cover-text p {
+            margin: 0%;
+            padding: 0%;
+            font-size: 1rem;
+
+        }
+
+        .cover-footer {
+            display: flex;
+            width: 100%;
+
+            .num-desc {
+                font-size: 2rem;
+            }
+        }
+
+        .gated {
+            margin-left: 5rem;
+        }
+
+
+    }
+
+    .workshop-block {
+        margin-left: 1rem;
+    }
+
+    .work-heading {
+        background: linear-gradient(#00F845, $blue);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 5.5rem;
+        font-family: $font-family;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    .workshops-container {
+        // display: flex;
+
+        hr {
+            width: 90%;
+            margin: auto;
+            margin-left: 2rem;
+        }
+    }
+
+    .image {
+        margin-left: 40rem;
+        margin-top: -2rem;
+        width: 32rem;
+        // margin-right: 1rem;
+    }
+
+    .workshop-content {
+        margin-left: -.5rem;
+
+        .at-wr {
+            font-family: $font-family;
+            color: $white;
+            font-size: 3.5rem;
+
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: $white;
+            line-height: 2.5rem;
+        }
+    }
+
+    // .image {
+    //     margin-left: 10rem;
+    //     margin-top: -9rem;
+    //     margin-right: 1rem;
+    // }
+
+    .viewing {
+        font-size: 3.5rem;
+        font-family: $font-family;
+        font-weight: 500;
+        color: $white;
+        margin-left: -1rem;
+        margin-bottom: 4rem;
+
+        .block-shopss {
+            display: flex;
+            justify-content: flex-start;
+
+            // margin-left: auto;
+            // margin-right: auto;
+
+        }
+    }
+
+    .fa-circle-arrow-down {
+        color: $white;
+    }
+
+    .create-work {
+        // display: flex;
+        // flex-direction: row;
+
+        // flex-wrap: nowrap;
+
+        .cover-work {
+            width: 26rem;
+            height: 24rem;
+            // object-fit: cover;
+        }
+
+    }
+
+    .create-workshop {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin: 3rem 0 0 1rem;
+    }
+
+    .process-flow {
+        max-height: 60rem;
+        max-width: 60rem;
+        // margin-right: 8rem;
+    }
+
+    .workshop-steps {
+        display: flex;
+        align-items: flex-end;
+        color: white;
+
+        &-heading {
+            font-size: 1.6rem;
+        }
+
+        .workshop-step-flow {
+            .step-1 {
+                font-size: 2rem;
+                color: $blue;
+            }
+
+            .step-header {
+                color: white;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            .step-desc {
+                color: white;
+                font-size: 1.3rem;
+                font-weight: 400;
+            }
+
+            .process-desc {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+
+    .cover-content {
+        width: 29rem;
+        height: 26rem;
+        margin-left: auto;
+    }
+
+    .details {
+        margin-left: 3rem;
+    }
+
+    .detail {
+        font-size: .8rem;
+        font-family: $font-family;
+        color: $white;
+        margin-top: .8rem;
+        // width: 24rem;
+    }
+
+    .s-1 {
+        font-size: 1rem;
+        font-family: $font-family;
+        font-weight: 500;
+        color: $blue;
+
+    }
+
+    .h1 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: $white;
+    }
+
+    .fa-arrow-down {
+        height: 6rem;
+        color: #3F3F3F;
+        width: 6rem;
+    }
+
+    .ss-1 {
+        font-size: .7rem;
+        margin-left: 1rem;
+        // font-weight: lighter;
+    }
+
+    .button {
+        background: $studio-secondary;
+        padding: 1rem 1.4rem;
+        font-size: 1.4rem;
+        transform: all .3s;
+        font-family: $font-family;
+        font-weight: bold;
+        border: none;
+
+        i {
+            margin-left: .3rem;
+        }
+    }
+
+    .button:active {
+        transform: scale(.9);
+    }
+
+    .review-cont {
+        width: 50rem;
+        height: fit-content;
+        background: $review;
+        padding: 1rem;
+        border-radius: 3px;
+        margin: 11rem 0 0 2rem;
+
+        h2 {
+            color: #3F3F3F;
+            font-style: italic;
+            margin: 0%;
+            font-size: 5rem;
+
+        }
+
+        .rev {
+            font-size: 1.4rem;
+        }
+
+        .author {
+            color: $blue;
+            font-size: 1.8rem;
+        }
+
+        .author-desgn {
+            color: white;
+            font-size: 1.4rem;
+        }
+    }
+
+    .review-contt {
+        width: 42rem;
+        height: -moz-fit-content;
+        height: fit-content;
+        background: #1C1721;
+        padding: 1rem;
+        border-radius: 3px;
+        margin: 18rem 0 0 -38rem;
+
+
+        h2 {
+            color: #3F3F3F;
+            font-style: italic;
+            margin: 0%;
+            font-size: 5rem;
+
+        }
+
+        .rev {
+            font-size: 1.4rem;
+        }
+
+        .author {
+            color: $blue;
+            font-size: 1.8rem;
+        }
+
+        .author-desgn {
+            color: white;
+            font-size: 1.4rem;
+        }
+    }
+
+
+    .rev {
+        font-size: .8rem;
+    }
+
+    .cc {
+        font-size: .6rem;
+    }
+
+
+    .workshops-containers {
+        hr {
+            margin: auto;
+            margin-right: 1rem;
+            width: 65%;
+        }
+    }
+
+    .gated-content {
+        margin-left: -.1rem;
+    }
+
+    .gated-text {
+        background: linear-gradient(#FFB800, #FF0000);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 5.5rem;
+        font-family: $font-family;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-left: auto;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .gated-img {
+        // height: ;
+    }
+
+
+    .create-workshop-gated {
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    }
+
+    .gated-cont {
+        margin-left: initial;
+        margin-top: auto;
+    }
+
+    .footer {
+        // width: 100%;
+        // height: fit-content;
+        background: #1C1721;
+        padding: 1rem;
+        margin-top: 12rem;
+        // width: 100vw;
+        // margin: 0;
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+
+
+    }
+
+    .q-f {
+        font-size: .7rem;
+        margin: 1rem 5rem 0 1rem;
+        text-transform: capitalize;
+    }
+
+    .border-right {
+        border-right: 1px solid $white;
+        background: $white;
+        width: .1rem;
+        height: 8rem;
+    }
+
+    .ft-dt {
+        margin: 1.5rem 2rem 0 2.4rem;
+        padding-left: 1rem;
+        font-size: 2rem;
+        color: #D9D9D9;
+        cursor: pointer;
+
+        div {
+            margin-bottom: .5rem;
+        }
+    }
+
+    .hrl {
+        margin: 2.5rem 0 0 1rem;
+        width: 76%;
+    }
+
+    .hr2 {
+        margin: 2.5rem 0 0 1rem;
+        width: 67%;
+    }
+
+    .homepage-footer {
+        height: 15vh;
+        background-color: $studio-background;
+    }
+}
+
+
+// .background-mainscreen {
+//     // overflow-y: scroll;
+// }
+
+// .background-mainscreen::-webkit-scrollbar {
+//     width: 10px;
+//     color: #D9D9D9;
+
+// }
+
+// .background-mainscreen::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 5px #D9D9D9;
+//     border-radius: 7px;
+//     color: #D9D9D9;
+
+// }
+
+// .background-mainscreen::-webkit-scrollbar-thumb {
+//     background: purple;
+//     border-radius: 10px;
+
+// }
+
+.ball {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: $dyt-logbox;
+    text-align: center;
+    align-items: center;
+    // margin: auto;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    // margin-top: 5rem;
+
+    animation: bounce 0.9s infinite;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+
+
+    @keyframes bounce {
+        from {
+            transform: translate3d(0, 0, 0);
+        }
+
+        to {
+            transform: translate3d(0, 50px, 0);
+
+        }
+    }
+}
+
+.anchor {
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+}
+
+@media (max-width: 700px) {
+
+    .background-mainscreen {
+
+
+        // things which needed  to hidden
+
+        .workshop-content-image {
+            display: none;
+        }
+
+        .viewing {
+            .block-shopss {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .home-page {
+            background: url(../../../public/Assests/Images/mobileBg.png);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+            .cover-text {
+                margin: 0;
+                margin: 20rem 0 0 3rem;
+
+                .haeding {
+                    font-size: 3.3rem;
+                    font-weight: 700;
+                }
+
+                .homescreen-quotes {
+                    font-size: 1.4rem;
+                }
+
+                .num {
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+
+                .num-desc {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .background {
+            margin: 5rem 0 0 0rem;
+            padding: 0 2rem 0 2.2rem;
+
+            .work-heading {
+                font-size: 3.5rem;
+                font-weight: 600;
+                padding: 0;
+            }
+
+            .work-subheading {
+                font-size: 2.3rem;
+                font-weight: 600;
+                margin: 1rem 0 2rem 0rem;
+
+            }
+        }
+
+        .create-workshop {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            margin: 5rem 1rem 1rem 1rem;
+
+            .review-cont {
+                margin: 2rem 0 0 0;
+                width: 86vw;
+            }
+        }
+
+        .create-workshop-gated {
+            margin-top: 1rem;
+            margin-bottom: 10rem;
+        }
+
+        .gated-content {
+            .gated-text {
+                font-size: 3.5rem;
+                font-weight: 600;
+                width: 100vw;
+                // margin-left: 2.4rem;
+            }
+        }
+
+        .workshops-containers {
+            hr {
+                width: 35%;
+                margin-left: 1rem;
+                // margin-top: 0rem;
+            }
+        }
+
+        .review-contt {
+            width: 100%;
+
+            margin: 2rem 0 2rem 0rem;
+        }
+
+
+
+        .workshop-step-flow {
+
+            .step-1 {
+                font-size: 2rem;
+                font-weight: 600;
+                margin: 1rem 0;
+            }
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // .home-page {
+    //     min-height: 100vh;
+    //     // width: 100vw;
+    //     width: 100%;
+    //     background-image: url(../../../public/Assests/Images/mobileBg.png);
+    //     background-size: cover;
+    //     background-position: center;
+    //     position: relative;
+    //     overflow-y: scroll;
+
+    //     .cover-text {
+    //         font-family: $font-family;
+    //         font-style: $font-style;
+    //         // display: flex;
+    //         margin-left: 1.5rem;
+    //         margin-top: 10rem;
+    //         width: auto;
+    //         height: fit-content;
+    //         color: $white;
+    //         text-transform: capitalize;
+    //     }
+
+    //     .cover-text .haeding {
+    //         font-size: 3rem;
+    //         font-weight: 700;
+    //     }
+
+    //     .num {
+    //         font-size: 2.5rem;
+    //         font-weight: 500;
+    //     }
+
+    //     .cover-text p {
+    //         margin: 0%;
+    //         padding: 0%;
+    //         font-size: 1.6rem;
+    //     }
+
+    //     .horz {
+    //         width: 50%;
+    //     }
+
+    // }
+
+    // .header-home {
+    //     width: 100%;
+    // }
+
+    // .background {
+    //     background: black;
+    //     padding: 1rem;
+    //     width: 100%;
+    //     height: fit-content;
+
+    //     .workshop-content {
+    //         margin: 0 1rem;
+
+    //         h2 {
+    //             width: 100%;
+    //             font-size: 1.8rem;
+    //         }
+
+    //         p {
+    //             font-size: 1.4rem;
+    //         }
+
+    //         PrimaryButton {
+    //             font-size: 2rem;
+    //         }
+
+    //         .workshop-content-image {
+    //             display: none;
+    //         }
+    //     }
+
+    //     .workshop-content {}
+
+    // }
+
+    // .create-workshop {
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     .workshop-steps {
+    //         // padding-top: 5rem;
+    //     }
+    // }
+
+    // .work-heading {
+    //     font-size: 3.5rem;
+    //     margin: 0 2rem;
+    // }
+
+    // .wr-ct {
+    //     display: block;
+    // }
+
+
+    // .image {
+    //     display: none;
+    // }
+
+    // .viewing {
+    //     font-size: 2rem;
+    //     font-family: $font-family;
+    //     font-weight: 400;
+    //     color: $white;
+
+    //     .block-shops {
+    //         // display: ;
+    //         margin-left: auto;
+    //         margin-right: auto;
+
+    //     }
+
+    //     .view-all {
+    //         margin-top: 3rem;
+    //     }
+    // }
+
+    // .create-work {
+    //     display: block;
+    // }
+
+    // .cover-work {
+    //     width: 36rem;
+    //     height: 24rem;
+    //     padding-right: 2.5rem;
+    //     margin-bottom: 8rem;
+    //     // object-fit: cover;
+    // }
+
+    // .cover-content {
+    //     width: 29rem;
+    //     height: 26rem;
+    //     margin-left: auto;
+    // }
+
+    // .details {
+    //     margin-left: 0rem;
+    //     margin-top: 12rem;
+    // }
+
+    // .detail {
+    //     font-size: 1.5rem;
+    //     font-family: $font-family;
+    //     color: $white;
+    //     margin-top: .8rem;
+    // }
+
+    // .s-1 {
+    //     font-size: 1.9rem;
+    //     font-family: $font-family;
+    //     font-weight: 500;
+    //     color: $blue;
+    //     margin-bottom: 0%;
+
+    // }
+
+    // .h1 {
+    //     // font-weight: bold;
+    //     font-size: 1.8rem;
+    //     color: $white;
+    //     position: absolute;
+    //     // left: 2rem;
+    //     // top: 3rem;
+    //     margin-top: 1rem;
+    //     margin-left: 2rem;
+    //     width: 100%;
+    // }
+
+    // .fa-arrow-down {
+    //     height: 6rem;
+    //     color: #3F3F3F;
+    //     width: 6rem;
+    // }
+
+    // .ss-1 {
+    //     display: none;
+    // }
+
+    // .step1 {
+    //     margin-bottom: 2rem;
+    // }
+
+    // .button {
+    //     background: $studio-secondary;
+    //     padding: 1rem;
+    //     font-size: 1.5rem;
+    //     width: 100%;
+    //     transform: all .3s;
+    //     font-family: $font-family;
+    //     font-weight: bold;
+
+    //     i {
+    //         margin-left: 1.5rem;
+    //     }
+    // }
+
+    // .review-cont {
+    //     width: 33.5rem;
+    //     height: fit-content;
+    //     background: $review;
+    //     padding: .8rem;
+    //     border-radius: 3px;
+    //     margin: auto;
+    //     margin-top: 3rem;
+
+    //     q {
+    //         color: #3F3F3F;
+    //         font-style: italic;
+    //         margin: 0%;
+    //         font-size: 2rem;
+
+    //     }
+    // }
+
+    // .rev {
+    //     font-size: 1.6rem;
+    // }
+
+    // .cc {
+    //     font-size: 1.3rem;
+    // }
+
+    // .gated-text {
+    //     font-size: 3.2rem;
+    //     font-family: $font-family;
+    //     text-transform: capitalize;
+    //     font-weight: 600;
+    //     margin-left: auto;
+    //     margin-right: 2rem;
+    //     margin-bottom: 2rem;
+    // }
+
+    // .cover-content {
+    //     // position: relative;
+    //     // margin: -52rem 0 0 0;
+    //     display: none;
+    // }
+
+    // .ft-dt {
+    //     margin: 1rem 2rem 0 2rem;
+    //     font-size: 1.3rem;
+    //     width: 50%;
+    // }
+
+    // .q-f {
+    //     font-size: 1.1rem;
+    //     margin: 1rem 4rem 0 1rem;
+    // }
+
+}

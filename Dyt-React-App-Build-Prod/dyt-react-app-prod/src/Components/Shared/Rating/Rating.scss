@@ -1,0 +1,258 @@
+@import '../../../Constant/color.scss';
+@import '../../../Constant/Mixins.scss';
+
+.Rating-container {
+    .ratings-container {
+        display: flex;
+        gap: .9rem;
+        width: 53rem;
+    }
+
+    .rate-stars {
+        width: 22%;
+    }
+
+    .fa-star-half {
+        color: #FFB800;
+    }
+
+    .star-percent {
+        font-size: 1.25rem;
+        font-weight: 700;
+
+        div {
+            color: $studio-primary;
+
+        }
+    }
+
+    .rating {
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    .progress-container {
+        width: 100%;
+
+        .container {
+            margin-top: 1.15rem;
+        }
+
+        .progress {
+            height: .6rem;
+            background: #1C1721;
+
+            .progress-bar {
+                background: $studio-primary;
+                border-right: 1px solid $studio-primary;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .star-container {
+        width: 25%;
+    }
+
+    .start-ratings {
+        width: 100%;
+        margin-top: .2rem;
+    }
+
+    .fa-star.checked {
+        color: #FFB800;
+        margin-right: .3rem;
+    }
+
+    .fa-star {
+        margin-right: .3rem;
+        background: transparent;
+        // border: 1px solid white;
+        // color: transp;
+
+    }
+
+    .star {
+        font-size: 1.4rem;
+    }
+
+    .review-btn {
+        background: transparent;
+        width: 14rem;
+        height: 4rem;
+        padding: .5rem;
+        font-size: 1.3rem;
+        border: 1px solid white;
+        margin-top: 3rem;
+        transform: all .3s;
+    }
+
+    .review-btn:active {
+        transform: scale(.9);
+    }
+
+    .review-rating {
+        margin-top: 2rem;
+
+        .heading {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            margin-right: 1rem;
+            cursor: pointer;
+
+
+        }
+
+        label input {
+            display: none;
+        }
+
+        .review-inBox {
+            width: 19.5%;
+        }
+
+        .review-input {
+            resize: none;
+            background: $input-bg;
+            outline: none;
+            border: none;
+            margin-top: 2rem;
+            border-radius: 5px;
+            font-size: 1.4rem;
+            padding: 1rem;
+        }
+
+        .cancel-btn {
+            background: transparent;
+            font-size: 1.3rem;
+            margin-right: 2rem;
+            margin-top: 1rem;
+        }
+
+        .review-actions {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            margin-bottom: 3rem;
+        }
+
+        .publish {
+            width: 8rem;
+            font-size: 1.2rem;
+            height: 3rem;
+            font-weight: 500;
+        }
+    }
+
+    .success-section {
+        display: flex;
+        gap: 2rem;
+        // margin-top: 5rem;
+        width: 52rem;
+
+        .success-gif {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .success-qa {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .question-success-message {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #00C95B;
+        }
+
+        .SuccessMessage {
+            color: $sub-text;
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cancel-btn {
+            margin: -.2rem 0 0 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .review-section-part {
+        width: 40%;
+        display: flex;
+        gap: 2rem;
+
+        .review-part {
+            width: 65%;
+        }
+
+        .user-name-icon {
+            width: 5rem;
+            height: 5rem;
+            text-align: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 500;
+            background: $studio-primary;
+            padding: 1rem 0 0 0;
+            border-radius: 50%;
+            margin: 1rem 0;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+
+            .dots {
+                margin-top: 1.4rem;
+                cursor: pointer;
+            }
+        }
+
+        .reviewgiven-user {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $studio-primary;
+            margin-top: 1rem;
+
+            span {
+                font-weight: 200;
+                margin-left: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+
+        .fa-star {
+            font-size: 1.3rem;
+            margin-top: .5rem;
+            margin-right: .5rem;
+        }
+
+        .user-review {
+            font-size: 1.3rem;
+            color: $sub-text;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-top: .5rem;
+        }
+
+        .actionDropdown {
+            @include actionDropdown;
+
+            div {
+                padding: .5rem 1rem;
+            }
+
+            div:hover {
+                background: #c28ff159;
+            }
+        }
+    }
+}

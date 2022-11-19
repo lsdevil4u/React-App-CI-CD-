@@ -1,0 +1,333 @@
+@import '../../../Constant/color.scss';
+
+.onboarding_page {
+  // background: $studio-background;
+  font-family: $font-family;
+
+  // transform: translate(50%,-50%);
+  .header {
+    position: fixed;
+    top: 3%;
+    left: 0%;
+  }
+
+  .onboard-flow {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .signup-container {
+    background: $dyt-logbox;
+    width: 23.3rem;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    // margin-bottom: auto;
+    border-radius: 15px;
+    border: 1.5px solid;
+    border-image-slice: 1;
+    padding: 1rem;
+    // position: relative;
+    // text-align: center;
+    align-items: center;
+  }
+
+  .border-gradient {
+    border-radius: 15px;
+    border-image-source: linear-gradient(to right, $border-gradient1, $border-gradient2);
+  }
+
+  .sign-text {
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #D2CAD8;
+    font-family: $font-family;
+  }
+
+  .user-name {
+    font-size: 1.3rem;
+    font-family: $font-family;
+    color: $log-text;
+    //    position: absolute;
+    text-align: left;
+    height: 1rem;
+  }
+
+  .age-gen-div {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .age-input {
+    width: 9rem;
+    height: 4rem;
+    outline: none;
+    border-radius: 5px;
+    background: $input-bg;
+    padding: 1rem;
+    color: #D2CAD8;
+    border: none;
+    font-size: 1.3rem;
+    margin-left: -1.8rem;
+    margin-right: 1rem;
+  }
+
+  .gender-op {
+    width: 21rem;
+    height: 4rem;
+    outline: none;
+    border-radius: 5px;
+    background: $input-bg;
+    padding: .79rem;
+    color: #D2CAD8;
+    border: none;
+    // margin-left: -4rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+
+  .in-code {
+    width: 3.2rem;
+    font-size: 1.3rem;
+    // position: absolute;
+    height: 4rem;
+    background: $input-bg;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    outline: none;
+  }
+
+  .options {
+    // background: $studio-primary;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .not-msg {
+    color: $log-text;
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: $font-family;
+    margin-left: 2rem;
+    font-style: $font-style;
+    margin-top: 0%;
+  }
+
+  .notify {
+    text-align: left;
+  }
+
+  .select {
+    display: block;
+    // position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .select input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    // top: 29rem;
+    left: 2rem;
+    height: 16px;
+    width: 16px;
+    background-color: #D2CAD8;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  /* When the checkbox is checked,*/
+  .select input:checked~.checkmark {
+    background-color: $studio-secondary;
+    border: 0;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    padding-top: 5px;
+  }
+
+  /* Show the checkmark when checked */
+  .select input:checked~.checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .select .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 6px;
+    border: solid $white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .dropdown:hover .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-select {
+    justify-content: space-between;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .fa-caret-down {
+    padding: .3rem;
+  }
+
+  .dropdown-list {
+    border-radius: 5px;
+    background: $input-bg;
+    margin-top: 1rem;
+    width: 8rem;
+    height: 3.6rem;
+    padding: .2rem;
+    margin-left: -0.8rem;
+    font-size: 1.3rem;
+    // opacity: 0;
+    // visibility: hidden;
+    // transition: opacity 0.2s linear, visibility 0.2s linear;
+
+  }
+
+  .dropdown-list__item {
+    text-align: left;
+    margin-left: .8rem;
+    // border-bottom: 1px solid $white;
+  }
+
+  .user-check {
+    position: absolute;
+    left: 20rem;
+    margin-top: 1.5rem;
+  }
+
+  .user-check .fa-check {
+    color: $studio-secondary;
+    font-size: 1.5rem;
+  }
+
+  .fa-xmark {
+    color: $warning-text;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  .date-time-input {
+    display: flex;
+    gap: 1rem;
+    background-color: $input-bg;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .calendar-datepicker {
+    color: white;
+    width: 16rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: $input-bg;
+    border: none;
+    outline: none;
+  }
+
+  .custom-calendar {
+    font-weight: 500;
+    font-size: 1.4rem;
+    width: fit-content;
+    color: black;
+  }
+
+  .react-datepicker {
+    // background-color: $studio-primary;
+    // color: #ffff;
+    // border: none;
+
+    // &__traingle {
+    //   color: $studio-primary;
+    //   background-color: $studio-primary;
+    // }
+
+    // &__header {
+    //   background-color: $studio-primary;
+    //   color: white;
+    // }
+
+    &__month-select,
+    &__year-select,
+    &__month-dropdown-container--select {
+      color: black;
+    }
+
+    &__month-select option,
+    &__year-select option {
+      color: black;
+    }
+
+  }
+
+}
+
+@media (max-width: 700px) {
+  .onboarding_page {
+    .dropdown-list {
+      border-radius: 5px;
+      background: $input-bg;
+      margin-top: 4rem;
+      width: 2rem;
+      height: 2rem;
+      // padding: .2rem;
+      margin-left: 0.8rem;
+      font-size: 1rem;
+
+    }
+
+    .gender-op {
+      width: 21rem;
+      height: 4rem;
+      outline: none;
+      border-radius: 5px;
+      background: $input-bg;
+      padding: .79rem;
+      color: #D2CAD8;
+      border: none;
+      // margin-left: -4rem;
+      cursor: pointer;
+      font-size: 1.3rem;
+    }
+  }
+}

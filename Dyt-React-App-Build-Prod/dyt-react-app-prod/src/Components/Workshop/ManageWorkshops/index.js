@@ -1,0 +1,1 @@
+export { default as ManageWorkshops } from './ManageWorkshops'

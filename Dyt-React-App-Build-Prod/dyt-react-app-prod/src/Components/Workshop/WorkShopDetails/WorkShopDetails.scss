@@ -1,0 +1,971 @@
+@import '../../../Constant/color.scss';
+@import '../../../Constant/Mixins.scss';
+
+.workshop-details {
+    background-color: black;
+    height: fit-content;
+
+    .details-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin-left: 4rem;
+    }
+
+    .copy-link {
+        margin-right: 4rem;
+        padding: 1rem;
+        width: 16rem;
+        background-color: $studio-primary;
+        font-weight: 700;
+        border: none;
+
+    }
+
+    .copy-link:active {
+        transform: scale(.9);
+    }
+
+    .card-body {
+        background: $dyt-logbox;
+        height: 40rem;
+        width: 97%;
+        margin: 4rem 0rem 0rem 0rem;
+        display: flex;
+    }
+
+    .deatils-page-cover {
+        width: 45rem;
+        height: 36rem;
+        margin-left: auto;
+
+
+
+        .main-card-image {
+            width: 45rem;
+            height: 36rem;
+            object-fit: cover;
+        }
+
+        .book-now {
+            background-color: $studio-secondary;
+            padding: .8rem;
+            width: 45rem;
+            text-align: center;
+            height: fit-content;
+            font-size: 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    &_text-body {
+        width: 60%;
+        margin-left: 3.7rem;
+        padding-top: 4rem;
+    }
+
+    &_title {
+        color: $studio-primary;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    &_heading {
+        font-size: 2.3rem;
+        font-weight: 700;
+        width: 100%;
+        line-height: normal;
+    }
+
+    &_sub-heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $sub-text;
+        width: 90%;
+    }
+
+    &_timedate-body {
+        display: flex;
+    }
+
+    &_timedate-body {
+        margin-left: 3.7rem;
+        padding-top: 4rem;
+    }
+
+    &_card-cont {
+        width: 15rem;
+        height: 5rem;
+        background: #4081FF;
+        border-radius: 10px;
+        padding: 1rem;
+        display: flex;
+        gap: 1rem;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    .card-content-details {
+        &_title {
+            margin-top: -.2rem;
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .duration-card {
+        width: 15rem;
+        height: 5rem;
+        background: #00C95B;
+        border-radius: 10px;
+        padding: 1rem;
+        display: flex;
+        gap: 1rem;
+        // margin-left: 3rem;
+
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-top: .2rem;
+        }
+    }
+
+    .workshop-details_card-cont {
+        margin-left: 3rem;
+    }
+
+    .details-date {
+        margin-left: 3.7rem;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+
+        .date {
+            color: #00C95B;
+            margin-left: 1rem;
+            font-weight: 700;
+        }
+    }
+
+    .ratings {
+        margin: 1rem 0 0 8rem;
+        font-size: 1.3rem;
+        display: flex;
+        width: 11rem;
+        justify-content: space-between;
+
+        img {
+            width: 1.3rem;
+            height: 1.1rem;
+            margin-top: .4rem;
+            // margin-left: .2rem;
+        }
+    }
+
+    .dynamic-details-data {
+        margin-right: 6rem;
+    }
+
+    .dyanamic-part {
+        width: 53rem;
+    }
+
+    .information {
+        margin-left: 3.7rem;
+        margin-top: 8rem;
+
+        .information-heading {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+
+    .sub-heading {
+        margin-left: 3.7rem;
+        display: flex;
+        margin-top: 1.5rem;
+
+        img {
+            width: 1.6rem;
+            height: 1rem;
+            margin-top: 1rem;
+            margin-right: 1rem;
+        }
+
+        .sub-heading-details {
+            font-size: 1.6rem;
+            color: $sub-text;
+            width: 93%;
+            letter-spacing: .5px;
+        }
+    }
+
+    .rewards-container,
+    .requirements-container {
+        margin-top: 4rem;
+    }
+
+    .rewards {
+        margin-left: 3.7rem;
+        margin-top: 3rem;
+
+        .rewards-heading {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+
+    .requirements {
+        margin-left: 3.7rem;
+        margin-top: 3rem;
+
+        .requirements-heading {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+    }
+
+    .overview {
+        display: flex;
+        margin: -4rem 0 0 -1rem;
+    }
+
+    //section bars
+
+    .group {
+        height: fit-content;
+        width: 97%;
+        padding: 1rem 1rem 1rem 1rem;
+        // display: flex;
+        // position: absolute;
+        align-items: center;
+
+        ul {
+            display: flex;
+            position: relative;
+            gap: 3rem;
+            cursor: pointer;
+            background-color: $dyt-logbox;
+            width: initial;
+            height: 4.4rem;
+            margin: -1rem;
+            padding-left: 3.4rem;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            position: relative;
+            font-size: 1.5em;
+            color: $sub-text;
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: .1rem;
+        }
+
+        ul li a:visited {
+            color: $white;
+            font-weight: 600;
+            // font-size: 1.5rem;
+        }
+
+
+
+
+        // ul li a:hover::before {
+        //     transform: scaleX(1);
+        //     transform-origin: left;
+        // }
+
+
+
+        .active-tabs::before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            width: calc(100% + 2px);
+            height: 4px;
+            background: $studio-primary;
+            transform: translateX(-50%);
+        }
+
+        .active-content {
+            display: block;
+        }
+
+
+        .search {
+            font-size: 2.2em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            cursor: pointer;
+
+
+            .searchBtn {
+                position: relative;
+                left: 1rem;
+                // top: 2.5px;
+                transition: 0.5s ease-in-out;
+                // display: none;
+
+            }
+
+            .searchBtn.active {
+                left: 2rem;
+            }
+
+            .closeBtn {
+                opacity: 0;
+                visibility: hidden;
+                scale: 0;
+            }
+
+            .closeBtn.active {
+                opacity: 1;
+                visibility: visible;
+                position: relative;
+                left: 2rem;
+                transition: .5s;
+                scale: 1;
+            }
+        }
+
+    }
+
+
+    .searchBox {
+        width: 95.8%;
+        height: 6.4rem;
+        align-items: center;
+        padding-left: 8.5rem;
+        background: $input-bg;
+        color: white;
+        position: absolute;
+        left: -100%;
+        display: flex;
+        margin-left: 1rem;
+        transition: .5s ease-in-out;
+
+        input {
+            width: 100%;
+            background: none;
+            outline: none;
+            font-size: 1.5rem;
+            border: none;
+            height: 5.4rem;
+        }
+    }
+
+    .searchBox.active {
+        left: 0;
+    }
+
+    .details-points {
+        display: flex;
+        gap: 4rem;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        display: none;
+        padding: 5rem 0 0 2.4rem
+    }
+
+    .tandc {
+        margin-top: 8rem;
+        // margin-left: 13rem;
+
+        .details-heading {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .details-sub-heading {
+            display: flex;
+            margin-top: 1.5rem;
+
+            img {
+                width: 1.6rem;
+                height: 1rem;
+                margin-top: 1rem;
+                margin-right: 1rem;
+            }
+
+            .sub-heading-details {
+                font-size: 1.6rem;
+                color: $sub-text;
+                width: 93%;
+                letter-spacing: .5px;
+            }
+        }
+
+        .Policies {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-top: 2.5rem;
+        }
+
+        .policies-sub-heading {
+            display: flex;
+            margin-top: 1.5rem;
+
+            img {
+                width: 1.6rem;
+                height: 1rem;
+                margin-top: 1rem;
+                margin-right: 1rem;
+            }
+
+            .sub-heading-details {
+                font-size: 1.6rem;
+                color: $sub-text;
+                width: 93%;
+                letter-spacing: .5px;
+            }
+        }
+
+    }
+
+    .workshop-details-enrolled-user-table {
+        margin: 0 7rem 6rem 7rem;
+    }
+
+    .qa-section {
+        width: 40%;
+
+        .qa-section-heading {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .qa-header {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .ask-qa {
+            background: transparent;
+            font-size: 1.2rem;
+            border: 1px solid white;
+            // padding: 1rem;
+            width: 13rem;
+            height: 3.5rem;
+            text-align: center;
+            transform: all .3s;
+        }
+
+        .ask-qa:active {
+            transform: scale(.9);
+        }
+
+        .qa-subheading {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .qa-input-feild {
+            background: $input-bg;
+            width: 53rem;
+            padding: 1rem;
+            outline: none;
+            border: none;
+            border-radius: 7px;
+            font-size: 1.3rem;
+            color: $white;
+            margin-bottom: 1rem;
+        }
+
+        .config-buttons {
+            display: flex;
+            float: right;
+            // margin-bottom: 1rem;
+        }
+
+        .cancel-btn {
+            background: transparent;
+            font-size: 1.3rem;
+            margin-right: 2rem;
+            margin-top: 1rem;
+            border: none;
+        }
+
+        .publish-btn {
+            width: 10rem;
+            font-size: 1.2rem;
+            height: 3rem;
+            font-weight: 500;
+        }
+
+        .qa-section-part {
+            display: flex;
+            gap: 2rem;
+            margin-top: 6rem;
+
+            .user-name-icon {
+                width: 4rem;
+                height: 4rem;
+                text-align: center;
+                align-items: center;
+                font-size: 2rem;
+                font-weight: 600;
+                background: $studio-primary;
+                padding: .5rem 0 0 0;
+                border-radius: 50%;
+                margin: 1rem 0;
+            }
+
+            .user-question {
+                font-weight: 600;
+                font-size: 1.6rem;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                margin-bottom: 1rem;
+            }
+
+            .replied-answer {
+                color: $sub-text;
+                font-size: 1.5rem;
+            }
+
+            .question-asked-user {
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: $studio-primary;
+                margin-top: 1rem;
+
+                span {
+                    color: $sub-text;
+                    font-size: 1.3rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .success-section {
+            display: flex;
+            gap: 2rem;
+            margin-top: 4rem;
+            width: 52rem;
+
+            .success-gif {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .success-qa {
+                width: 5rem;
+                height: 5rem;
+            }
+
+            .question-success-message {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: #00C95B;
+            }
+
+            .SuccessMessage {
+                color: $sub-text;
+                font-size: 1.3rem;
+                margin-top: 1rem;
+            }
+
+            .cancel-btn {
+                margin: -.2rem 0 0 1rem;
+                cursor: pointer;
+            }
+
+
+        }
+
+
+    }
+
+    .notes-section {
+        width: 30%;
+
+        .notes-heading {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .notes-sub-heading {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+
+        .addNote-btn {
+            background: none;
+            border: 1px solid $white;
+            width: 12rem;
+            font-size: 1.2rem;
+            height: 3rem;
+            margin-top: 1rem;
+            transform: all .3s;
+        }
+
+        .addNote-btn:active {
+            transform: scale(.9);
+        }
+
+        .notes-textarea {
+            width: 40rem;
+            height: 10rem;
+            background: $input-bg;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            outline: none;
+            padding: 1rem;
+            font-size: 1.3rem;
+            resize: none;
+        }
+
+        .note-btn {
+            display: flex;
+            float: right;
+        }
+
+        .cancel-btn {
+            background: transparent;
+            font-size: 1.3rem;
+            margin-right: 2rem;
+            margin-top: 1rem;
+        }
+
+        .saveNote-btn {
+            width: 10rem;
+            font-size: 1.2rem;
+            height: 3rem;
+            font-weight: 500;
+        }
+
+        .created-notes {
+            width: 50rem;
+            background: $review;
+            height: fit-content;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 5rem;
+            display: flex;
+
+            .created-content {
+                font-size: 1.3rem;
+                width: 47rem;
+            }
+
+            .icon {
+                cursor: pointer;
+            }
+
+            .actionDropdown {
+                @include actionDropdown;
+                left: 42rem;
+                margin-top: 2rem;
+
+                div {
+                    padding: .5rem 1rem;
+                }
+
+                div:hover {
+                    background: #c28ff159;
+                }
+            }
+        }
+    }
+
+    .reviews-section {
+        .review-heading {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+
+    .purchase-details {
+        margin: 3rem 0 0 3.8rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+
+        .content-price-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+
+            .heading {
+                font-size: 1.3rem;
+                color: $sub-text;
+                margin-right: 5rem;
+                margin-top: .5rem;
+            }
+
+            .price {
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-top: .5rem;
+            }
+        }
+    }
+
+
+
+
+
+    @media screen and (max-width: 600px) and (min-width: 300px) {
+        padding: 0 2rem;
+
+        .details-heading {
+            flex-direction: column;
+
+            h1 {
+                margin: 2rem 0 2rem 1rem;
+            }
+
+            .copy-link {
+                width: 100%;
+                margin: 1.5rem 1rem 0 0rem;
+            }
+        }
+
+
+        .card-body {
+            height: 100%;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .deatils-page-cover {
+            width: 85vw;
+            height: 36rem;
+            margin-left: 0;
+
+            .main-card-image {
+                width: 85vw;
+                height: 36rem;
+                object-fit: cover;
+            }
+
+            .book-now {
+                background-color: $studio-secondary;
+                padding: .8rem;
+                width: 86vw;
+                height: fit-content;
+                margin-top: 30rem;
+            }
+        }
+
+        &_text-body {
+            width: 100%;
+            margin-left: 1.5rem;
+            margin-right: auto;
+            padding-top: 2rem;
+        }
+
+        &_title {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        &_heading {
+            font-size: 1.6rem;
+            width: 75%;
+        }
+
+        &_sub-heading {
+            font-size: 1.5rem;
+            width: 90%;
+        }
+
+        &_timedate-body {
+            display: flex;
+        }
+
+        &_timedate-body {
+            margin-left: 1rem;
+            padding-top: 3rem;
+        }
+
+        .details-date {
+            margin-left: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .ratings {
+            margin: 1rem 0 2rem 1rem;
+        }
+
+
+        .tandc {
+            margin-top: 4rem;
+            margin-left: 1rem;
+
+        }
+
+        .requirements {
+            margin-left: 1rem;
+            margin-top: 0rem;
+
+            .requirements-heading {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+        }
+
+        .dyanamic-part {
+            width: 100%;
+        }
+
+        .information {
+            margin-left: 1rem;
+            margin-top: 13rem;
+
+            .information-heading {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+        }
+
+        .sub-heading {
+            margin-left: 1rem;
+            display: flex;
+            margin-top: 1.5rem;
+        }
+
+        .rewards {
+            margin-left: 1rem;
+            margin-top: 0rem;
+        }
+
+        .workshop-details-enrolled-user-table {
+            margin: 0 1rem 6rem 1rem;
+        }
+
+        .group {
+            width: 97%;
+
+            ul {
+                background-color: transparent;
+                margin-top: 20rem;
+                padding-left: 2rem;
+            }
+        }
+
+        .overview {
+            flex-direction: column;
+            margin: -13rem 0 0 0;
+        }
+
+        .qa-section {
+            width: 100%;
+
+            .ask-qa {
+                margin-bottom: 1rem;
+            }
+
+            .qa-input-feild {
+                width: 38rem;
+            }
+
+            .qa-section-part {
+                margin-top: 6rem;
+
+                .user-name-icon {
+                    width: 5rem;
+                    height: 5rem;
+                    font-size: 1.8rem;
+                    padding: 1.3rem 0 0 0;
+                }
+
+                .user-question {
+                    width: 30rem;
+                    white-space: wrap;
+                }
+
+                .question-asked-user {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .success-section {
+                width: 38rem;
+
+                .success-qa {
+                    width: 6rem;
+                    height: 6rem;
+                    margin-top: 1rem;
+                }
+
+                .question-success-message {
+                    font-size: 1.7rem;
+                }
+
+                .SuccessMessage {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .qa-section-heading {
+                flex-direction: column;
+            }
+
+            .qa-subheading {
+                font-size: 1.5rem;
+            }
+
+            .cancel-btn {
+                font-size: 1.6rem;
+            }
+
+            .publish-btn {
+                font-size: 1.55rem;
+            }
+        }
+
+        .active-content {
+            padding: 4rem 0 0 1rem;
+        }
+
+        .purchase-details {
+            margin: 2rem 0 1rem 1rem;
+
+            .content-price-container {
+                display: flex;
+                width: 55%;
+            }
+
+        }
+
+
+
+    }
+
+}

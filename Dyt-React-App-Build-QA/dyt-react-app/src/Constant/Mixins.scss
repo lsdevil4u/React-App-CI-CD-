@@ -1,0 +1,17 @@
+@mixin flexed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin actionDropdown {
+    width: 10rem;
+    height: fit-content;
+    background: #120E16;
+    position: absolute;
+    left: 35rem;
+    border-top: 5px solid $studio-primary;
+    padding: .5rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}

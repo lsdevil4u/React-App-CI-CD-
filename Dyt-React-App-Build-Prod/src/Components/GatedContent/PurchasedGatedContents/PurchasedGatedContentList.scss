@@ -1,0 +1,144 @@
+@import '../../../Constant/color.scss';
+
+.gated_content_list {
+    background-color: black;
+    min-height: 100vh;
+    max-height: fit-content;
+
+    .Gatedcard-list-layout {
+        padding: 2rem;
+    }
+
+    .GatedContentList_card-list-layout {
+        margin-top: 0rem;
+        display: flex;
+        // flex: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // padding: 0 5rem;
+
+        .GatedContentList_card-list-plot {
+            width: 25%;
+            // margin-right: 3%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .search-bar-list {
+        margin: 3rem 0 1rem 6rem;
+    }
+
+    .my-workshops-body {
+        padding: 2rem;
+    }
+
+    .create-btn {
+        background-color: $studio-secondary;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        transform: all .2s;
+        width: 23rem;
+        margin-left: auto;
+        border: none;
+    }
+
+    .create-btn:active {
+        transform: scale(.9);
+    }
+
+    .heading-text {
+        display: flex;
+        margin-bottom: 1rem;
+        padding: 0 2rem;
+        margin-left: 0rem;
+        margin-top: -2rem;
+    }
+
+    .no-gated-content {
+        text-align: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin: 17.5rem;
+    }
+
+    .fixed-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+
+    .gated_content_list {
+        // padding: 1rem 3rem 1 3rem;
+
+        .GatedContentList_card-list-layout {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem auto 0rem;
+            padding: 0 0rem;
+            width: 100%;
+
+        }
+
+        .GatedContentList_card-list-plot {
+            width: 100%;
+            // margin-right: 3%;
+            margin-top: 2rem;
+        }
+
+        // .search-bar-list {
+        //     margin: 1rem 0 0rem -1.1rem;
+        // }
+        h1 {
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+        .create-btn {
+            background-color: $studio-secondary;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            transform: all .2s;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 2rem;
+        }
+
+        .create-btn:active {
+            transform: scale(.9);
+        }
+
+        .heading-text {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            padding: 0 0rem;
+        }
+
+        .no-gated-content {
+            text-align: center;
+            align-items: center;
+            font-size: 1.5rem;
+            margin: 23rem 2rem;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+
+    .gated_content_list .GatedContentList_card-list-layout .GatedContentList_card-list-plot {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}

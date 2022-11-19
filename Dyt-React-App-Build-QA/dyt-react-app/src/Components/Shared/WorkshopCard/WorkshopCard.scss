@@ -1,0 +1,212 @@
+@import "../../../Constant/color.scss";
+
+.workshop-card {
+    width: 30rem;
+    height: 20rem;
+    background: transparent;
+    height: fit-content;
+    font-family: $font-family;
+    margin-bottom: 2rem;
+    // margin-right: 1.8rem;
+
+    .cards {
+        width: 30rem;
+        height: fit-content;
+        transform: all .3s ease-in;
+    }
+
+    .cards:hover {
+        transform: translateY(-6px);
+        transform: scale(1.02);
+        box-shadow: 0px 1px 8px #7000FF;
+    }
+
+    .card-layout {
+        background: $studio-background;
+    }
+
+    .workshop-card-image {
+        width: 30rem;
+        height: 24rem;
+        object-fit: cover;
+    }
+
+    .image-card {
+        // background: black;
+        // background: #9AA0A6;
+        background: rgba(68, 59, 78, 0.2);
+        width: 30rem;
+        height: 15rem;
+        object-fit: cover;
+        padding: 2rem;
+        height: fit-content;
+        color: $white;
+    }
+
+    .workshop_card_info {
+        flex: 1;
+        flex-direction: row;
+
+        .thum-pic {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50px;
+        }
+
+        .user-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.3rem 0 0 .6rem;
+            text-transform: capitalize;
+        }
+
+        .time {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-left: auto;
+
+        }
+    }
+
+    .user-info {
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 25rem;
+        height: 4rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .date {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #D9D9D9;
+        // margin-bottom: 2rem;
+    }
+
+    .rup-block {
+        width: 30rem;
+        background: #7000FF;
+        height: 4.2rem;
+        padding: 1rem;
+        opacity: 0.7;
+        position: relative;
+        color: $white;
+        opacity: 1;
+    }
+
+    .ruppee {
+        color: $white;
+        opacity: none;
+        font-weight: 600;
+        position: absolute;
+        bottom: .8rem;
+        font-size: 1.8rem;
+        margin-left: 2rem;
+
+        sup {
+            text-decoration: line-through;
+            font-size: 1.5rem;
+        }
+    }
+
+    .scracth {
+        color: $white;
+        text-decoration: line-through;
+        font-size: 1.3rem;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 8rem;
+    }
+
+    .fa-greater-than {
+        color: $white;
+        position: absolute;
+        right: 2rem;
+        bottom: 1.3rem;
+        width: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+
+    }
+
+    .image-container {
+        position: relative;
+
+        .workshop-status {
+            position: absolute;
+            padding-right: 3.5rem;
+            padding-top: 0.5rem;
+            padding-left: 1rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            clip-path: polygon(100% 0, 75% 25%, 100% 50%, 0 50%, 0 0);
+            // background-color: orangered;
+            transform-origin: 0 0;
+            transform: rotate(90deg);
+            width: fit-content;
+            height: 7rem;
+            top: -2%;
+            left: 95%;
+            box-shadow: 1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 3rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+
+        .cards:hover {
+            box-shadow: none;
+        }
+
+        .workshop-card-image {
+            width: 84vw;
+            height: 24rem;
+            object-fit: cover;
+            margin: 2rem 0 0 -1rem;
+        }
+
+        .image-card {
+            width: 84vw;
+            height: 15rem;
+            object-fit: cover;
+            margin: 0rem 0 1rem -1rem;
+        }
+
+        .rup-block {
+            width: 84vw;
+            height: 4.2rem;
+            margin: 2rem 0 0 -1rem;
+        }
+
+        .date {
+            margin-bottom: 1rem;
+        }
+
+        .workshop-card .image-container .workshop-status {
+            top: -2%;
+            left: 2200% !important;
+        }
+
+        .image-container {
+            position: relative;
+
+            .workshop-status {
+                top: 5%;
+                left: 80vw;
+            }
+        }
+    }
+
+
+
+
+
+
+}

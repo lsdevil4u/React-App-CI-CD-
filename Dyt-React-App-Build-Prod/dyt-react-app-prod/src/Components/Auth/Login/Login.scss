@@ -1,0 +1,121 @@
+@import '../../../Constant/color.scss';
+
+.login__studio {
+    font-family: $font-family;
+    font-style: $font-style;
+
+    .header {
+        position: fixed;
+        top: 2%;
+        left: 5%;
+    }
+
+    .login-form {
+        position: fixed;
+        top: 48%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    .log-container {
+        background: $dyt-logbox;
+        width: 25rem;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        // margin-top: 1rem;
+        // margin-bottom: auto;
+        // border-radius: 15px;
+        border: 1.5px solid;
+        border-image-slice: 1;
+        padding: 2rem;
+        // position: relative;
+        text-align: center;
+        align-items: center;
+    }
+
+    .border-gradient {
+        // border-radius: 15px;
+        border-image-source: linear-gradient(to right, $border-gradient1, $border-gradient2);
+    }
+
+    .border-gradient {
+        position: relative;
+
+    }
+
+    .border-gradient::before {
+        position: absolute;
+        // content: "";
+        inset: 0;
+        border-radius: 12px;
+        padding: 3px;
+        background: linear-gradient(to right, $border-gradient1, $border-gradient2);
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    .log-text {
+        margin: auto;
+        // display: flex;
+        // margin-right: 18rem ;
+        text-align: center;
+        font-size: 2rem;
+        color: $white;
+        font-family: $font-family;
+    }
+
+    .email-phone-cont {
+        font-size: 1.3rem;
+        font-family: $font-family;
+        color: $log-text;
+        position: absolute;
+    }
+
+}
+
+.sign-up-container {
+    background: $dyt-logbox;
+    width: 22.5rem;
+    height: 3.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.su-txt {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $sub-text;
+    text-align: center;
+    border-radius: 10px;
+
+    .sign-up {
+        color: $border-gradient1;
+        font-weight: 700;
+        font-family: $font-family;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    @media (max-width: 700px) {
+        .header {
+            position: fixed;
+            top: 2%;
+            left: 20%;
+        }
+
+        .login-form {
+            position: fixed;
+            top: 40%;
+            right: 40%;
+            transform: translate(50%, -50%);
+        }
+    }
+}

@@ -1,0 +1,324 @@
+@import '../../../Constant/color.scss';
+@import '../../../Constant/Mixins.scss';
+
+
+.hostRegistration-page {
+    color: black;
+    background-color: $studio-background;
+
+    .progress-status {
+        @include flexed;
+        gap: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .progress-stages {
+        height: 2rem;
+        width: 2rem;
+        background-color: $studio-primary;
+        border-radius: 50%;
+        color: $white;
+        font-size: 1.4rem;
+        @include flexed;
+
+        &-checked {
+            background-color: $studio-secondary;
+        }
+    }
+
+    .registration-screen {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+
+        .text-side {
+            margin-bottom: 20rem;
+
+            .registration-header {
+                font-size: 6rem;
+                font-weight: 700;
+                display: block;
+
+            }
+
+            .sub-header {
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .form-side {
+        width: 35rem;
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, $border-gradient1, $border-gradient2);
+        border-image-slice: 1;
+        padding: 25px;
+        border-radius: 3rem;
+
+
+        .reg-form {
+            margin-bottom: 2rem;
+
+            .warnings {
+                color: $warning-text;
+                font-size: 1.2rem;
+            }
+
+            .input-box {
+                width: 100%;
+                margin-bottom: 0.5rem;
+                font-size: 1.4rem;
+                border-radius: 0.3rem;
+                margin-top: 0.5rem;
+            }
+
+            .warning-textbox {
+                border: 1px solid $warning-text;
+            }
+
+            div {
+                font-size: 1.4rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .reg-form-textarea {
+                margin-bottom: 2rem;
+                display: flex;
+                outline: none;
+                width: 100%;
+                border-radius: 3px;
+                background: $input-bg;
+                padding: .7rem;
+                color: $white;
+                border: none;
+                margin-top: 1rem;
+            }
+
+            .flexed {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .container {
+                display: block;
+                position: relative;
+                cursor: pointer;
+                font-size: 14px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                margin-left: 1rem;
+            }
+
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .checkmark {
+                position: absolute;
+                top: 25%;
+                left: -3%;
+                height: 12px;
+                width: 12px;
+                background-color: #eee;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+
+            .container:hover input~.checkmark {
+                background-color: #ccc;
+            }
+
+            .container input:checked~.checkmark {
+                background-color: $studio-primary;
+            }
+
+            .container input:checked~.checkmark:after {
+                display: block;
+            }
+
+
+        }
+
+        .next-btn {
+            width: 100%;
+            margin-top: 3rem;
+        }
+    }
+
+    .regForm-footer {
+        height: 30vh;
+    }
+}
+
+
+
+@media(max-width:700px) {
+    .hostRegistration-page {
+        background-color: $studio-background;
+
+        .progress-status {
+            @include flexed;
+            // gap: 1rem;
+            font-size: 1rem;
+        }
+
+        .progress-stages {
+            height: 2rem;
+            width: 2rem;
+            background-color: $studio-primary;
+            border-radius: 50%;
+            color: $white;
+            font-size: 1rem;
+            @include flexed;
+
+            &-checked {
+                background-color: $studio-secondary;
+            }
+        }
+
+        .registration-screen {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            gap: 0rem;
+
+            .text-side {
+                margin-bottom: 2rem;
+                margin-top: 6rem;
+
+                .registration-header {
+                    font-size: 6rem;
+                    font-weight: 700;
+                    display: block;
+                    font-size: 3rem;
+
+                }
+
+                .sub-header {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .form-side {
+            width: 35rem;
+            border: 3px solid transparent;
+            border-image: linear-gradient(to right, $border-gradient1, $border-gradient2);
+            border-image-slice: 1;
+            padding: 25px;
+            border-radius: 3rem;
+            background: $studio-background;
+            z-index: 100;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+
+            .reg-form {
+                margin-bottom: 2rem;
+
+                .warnings {
+                    color: $warning-text;
+                    font-size: 1.2rem;
+                }
+
+                .input-box {
+                    width: 100%;
+                    margin-bottom: 0.5rem;
+                    font-size: 1.4rem;
+                    border-radius: 0.3rem;
+                    margin-top: 0.5rem;
+                }
+
+                .warning-textbox {
+                    border: 1px solid $warning-text;
+                }
+
+                div {
+                    font-size: 1.4rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .reg-form-textarea {
+                    margin-bottom: 2rem;
+                    display: flex;
+                    outline: none;
+                    width: 100%;
+                    border-radius: 3px;
+                    background: $input-bg;
+                    padding: .7rem;
+                    color: $white;
+                    border: none;
+                    margin-top: 1rem;
+                }
+
+                .flexed {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+
+                .container {
+                    display: block;
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 14px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    margin-left: 1rem;
+                }
+
+                .container input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+
+                .checkmark {
+                    position: absolute;
+                    top: 25%;
+                    left: -3%;
+                    height: 12px;
+                    width: 12px;
+                    background-color: #eee;
+                    border-radius: 50%;
+                    margin-right: 1rem;
+                }
+
+                .container:hover input~.checkmark {
+                    background-color: #ccc;
+                }
+
+                .container input:checked~.checkmark {
+                    background-color: $studio-primary;
+                }
+
+                .container input:checked~.checkmark:after {
+                    display: block;
+                }
+
+
+            }
+
+            .next-btn {
+                width: 100%;
+                margin-top: 3rem;
+            }
+        }
+
+        .regForm-footer {
+            height: 25vh;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+* {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
+.root-app {
+  font-size: 62.5%;
+  color: white;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+
+/* constants  to be used as bootstrap classes*/
+.cursorPointer {
+  cursor: pointer;
+}
+
+.calendar-datepicker {
+  /* // color: black; */
+  width: 25rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  /* background-color: $input-bg; */
+  border: none;
+  outline: none;
+}
+
+.custom-calendar {
+  font-weight: 500;
+  font-size: 1.4rem;
+  width: fit-content;
+  color: black;
+}

@@ -1,0 +1,386 @@
+@import '../../../Constant/color.scss';
+@import '../../../Constant/Mixins.scss';
+
+
+.createworkshop-page {
+    color: black;
+    background-color: $studio-background;
+
+    .progress-status {
+        @include flexed;
+        gap: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .progress-stages {
+        height: 2rem;
+        width: 2rem;
+        background-color: $studio-primary;
+        border-radius: 50%;
+        color: $white;
+        font-size: 1.4rem;
+        @include flexed;
+
+        &-checked {
+            background-color: $studio-secondary;
+        }
+    }
+
+    .registration-screen {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .text-side {
+            margin-bottom: 20rem;
+
+            .registration-header {
+                font-size: 6rem;
+                font-weight: 700;
+                display: block;
+
+            }
+
+            .sub-header {
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .date-time-input {
+        display: flex;
+        gap: 1rem;
+        background-color: $input-bg;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .calendar-datepicker {
+        // color: black;
+        width: 25rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        background-color: $input-bg;
+        border: none;
+        outline: none;
+    }
+
+    .custom-calendar {
+        font-weight: 500;
+        font-size: 1.4rem;
+        width: fit-content;
+        color: black;
+    }
+
+    .form-side {
+        width: 35rem;
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, $border-gradient1, $border-gradient2);
+        border-image-slice: 1;
+        padding: 25px;
+        border-radius: 3rem;
+
+        .workshopPage-upload-image-substitute {
+            height: 13rem;
+            width: 100%;
+            background-color: $input-bg;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%239E9C9CFF' strokeWidth='3' stroke-dasharray='10' stroke-dashoffset='24' strokeLinecap='square'/%3e%3c/svg%3e");
+
+            .workshopPage-upload-image {
+                height: 13rem;
+                width: 100%;
+                display: none;
+            }
+
+            .workshopPage-upload-image-placeholder {
+                margin: 2rem 35%;
+            }
+        }
+
+        .reg-form {
+            margin-bottom: 2rem;
+
+            // .dateTimeCalender {
+            //     margin-top: 2.8rem;
+            // }
+
+            .aboutSection__dateField {
+
+                border: 1px solid #000;
+                border-radius: 10px;
+                height: 48px;
+                padding-left: 60px;
+            }
+
+            .warnings {
+                color: $warning-text;
+                font-size: 1.2rem;
+                // margin-top: 1rem;
+            }
+
+            .input-box {
+                width: 100%;
+                margin-bottom: 1rem;
+                font-size: 1.4rem;
+                border-radius: 0.3rem;
+                margin-top: 1rem;
+            }
+
+
+            .cover-text {
+                margin-bottom: 1rem;
+            }
+
+            .input-bx {
+                width: 100%;
+                // margin-bottom: 1rem;
+                font-size: 1.4rem;
+                border-radius: 0.3rem;
+                // margin-top: 0.5rem;
+                // height: 4rem;
+            }
+
+            .warning-textbox {
+                border: 1px solid $warning-text;
+            }
+
+            div {
+                font-size: 1.4rem;
+                // margin-top: 1rem;
+            }
+
+            .reg-form-textarea {
+                margin-bottom: 2rem;
+                display: flex;
+                outline: none;
+                width: 100%;
+                border-radius: 3px;
+                background: $input-bg;
+                padding: .7rem;
+                color: $white;
+                border: none;
+            }
+
+            .flexed {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .container {
+                display: block;
+                position: relative;
+                cursor: pointer;
+                font-size: 14px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                margin-left: 1rem;
+            }
+
+            .container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .checkmark {
+                position: absolute;
+                top: 25%;
+                left: -3%;
+                height: 12px;
+                width: 12px;
+                background-color: #eee;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+
+            .container:hover input~.checkmark {
+                background-color: #ccc;
+            }
+
+            .container input:checked~.checkmark {
+                background-color: $studio-primary;
+            }
+
+            .container input:checked~.checkmark:after {
+                display: block;
+            }
+
+
+        }
+
+        .next-btn {
+            width: 100%;
+            margin-top: 3rem;
+        }
+    }
+
+    .regForm-footer {
+        height: 30vh;
+    }
+}
+
+
+
+@media(max-width:700px) {
+    .createworkshop-page {
+        background-color: $studio-background;
+
+        .progress-status {
+            @include flexed;
+            // gap: 1rem;
+            font-size: 1rem;
+        }
+
+        .progress-stages {
+            height: 2rem;
+            width: 2rem;
+            background-color: $studio-primary;
+            border-radius: 50%;
+            color: $white;
+            font-size: 1rem;
+            @include flexed;
+
+            &-checked {
+                background-color: $studio-secondary;
+            }
+        }
+
+        .registration-screen {
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            gap: 0rem;
+
+            .text-side {
+                margin-bottom: 0rem;
+
+                .registration-header {
+                    font-size: 6rem;
+                    font-weight: 700;
+                    display: block;
+                    font-size: 3rem;
+
+                }
+
+                .sub-header {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .form-side {
+            width: 35rem;
+            border: 3px solid transparent;
+            border-image: linear-gradient(to right, $border-gradient1, $border-gradient2);
+            border-image-slice: 1;
+            padding: 25px;
+            border-radius: 3rem;
+            background: $studio-background;
+            z-index: 100;
+            margin: 6rem 0 6rem 0;
+
+            .reg-form {
+                margin-bottom: 2rem;
+
+                .warnings {
+                    color: $warning-text;
+                    font-size: 1.2rem;
+                }
+
+                .input-box {
+                    width: 100%;
+                    margin-bottom: 0.5rem;
+                    font-size: 1.4rem;
+                    border-radius: 0.3rem;
+                    margin-top: 0.5rem;
+                }
+
+                .warning-textbox {
+                    border: 1px solid $warning-text;
+                }
+
+                div {
+                    font-size: 1.4rem;
+                    // margin-top: 1rem;
+                }
+
+                .reg-form-textarea {
+                    margin-bottom: 2rem;
+                    display: flex;
+                    outline: none;
+                    width: 100%;
+                    border-radius: 3px;
+                    background: $input-bg;
+                    padding: .7rem;
+                    color: $white;
+                    border: none;
+                }
+
+                .flexed {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+
+                .container {
+                    display: block;
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 14px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    margin-left: 1rem;
+                }
+
+                .container input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+
+                .checkmark {
+                    position: absolute;
+                    top: 25%;
+                    left: -3%;
+                    height: 12px;
+                    width: 12px;
+                    background-color: #eee;
+                    border-radius: 50%;
+                    margin-right: 1rem;
+                }
+
+                .container:hover input~.checkmark {
+                    background-color: #ccc;
+                }
+
+                .container input:checked~.checkmark {
+                    background-color: $studio-primary;
+                }
+
+                .container input:checked~.checkmark:after {
+                    display: block;
+                }
+
+
+            }
+
+            .next-btn {
+                width: 100%;
+                margin-top: 3rem;
+            }
+        }
+
+        .regForm-footer {
+            height: 25vh;
+        }
+    }
+}

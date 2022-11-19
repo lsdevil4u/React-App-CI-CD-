@@ -1,0 +1,49 @@
+@import '../../../../Constant/color.scss';
+@import '../../../../Constant/Mixins.scss';
+
+.PageNotFound-page {
+    background: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+
+    .header {
+        width: 95%;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .pagenotfound-img {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            margin: auto;
+            margin-top: 1rem;
+
+            div {
+
+                color: $studio-primary;
+            }
+        }
+
+    }
+
+    .pagenotfound-text {
+        font-size: 1.5rem;
+        // width: 50vw;
+        margin-top: 2.8rem;
+
+    }
+
+
+
+}

@@ -1,0 +1,34 @@
+@import '../../../../Constant/color.scss';
+
+.reg-form-successfull {
+    text-align: center;
+
+    .success-msg {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .success-desc {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+    .reg-form-status-animation {
+        max-height: 18rem;
+        max-width: 18rem;
+        margin-bottom: 3rem;
+    }
+
+    .redirections {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $studio-primary;
+    }
+}
+
+.reg-form-status-animation {
+    height: 18rem;
+    width: 18rem;
+}

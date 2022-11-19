@@ -1,0 +1,43 @@
+@import '../../../Constant/color.scss';
+
+.count-down-timer {
+    // box-sizing: border-box;
+    // margin: 0;
+    // padding: 0;
+    // background-color: black;
+    // font-size: 2rem;
+
+    // .section {
+    //     display: flex;
+    // }
+
+    .count {
+        background-color: $dyt-logbox;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 0.4fr);
+        text-align: center;
+        padding: 0.5em 2em 1.5em 2em;
+        width: 22rem;
+        font-size: 1.2rem;
+        margin: 0 4rem 0 0;
+
+
+
+    }
+
+    section {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-weight: 800;
+        margin-bottom: -1rem;
+
+    }
+
+    small {
+        font-size: 1rem;
+        margin-top: -1rem;
+    }
+}

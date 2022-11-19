@@ -1,0 +1,55 @@
+---
+# tasks file for brand-admin
+
+- name: Create task definition
+  ecs_taskdefinition:
+    family: "react-app-service-uat-taskdef"
+    execution_role_arn: "arn:aws:iam::660262893273:role/FargateECSRole"
+    containers:
+    - name: "react-app-service-uat"
+      essential: true
+      image: "660262893273.dkr.ecr.ap-south-1.amazonaws.com/dyt-react-app-qa:{{ DOCKER_VERSION }}"
+      portMappings:
+      - containerPort: 3000
+        hostPort: 3000
+      logConfiguration:
+           logDriver: awslogs
+           options:
+             awslogs-group: "react-app-uat"
+             awslogs-region: "ap-south-1"
+             awslogs-stream-prefix: "react-app"
+    launch_type: FARGATE
+    cpu: 512
+    memory: 1024
+    state: present
+    network_mode: awsvpc
+    region: "ap-south-1"
+  register: task_output
+
+- name: Find TaskDef details
+  ecs_taskdefinition_facts:
+    task_definition: "react-app-service-uat-taskdef"
+    region: "ap-south-1"
+  register: active_taskdefinition
+  # #
+- name: create ECS service
+  ecs_service:
+    state: present
+    name: "react-app-service-uat"
+    cluster: "dyt-cluster-qa"
+    task_definition: "{{ active_taskdefinition.family}}:{{ active_taskdefinition.revision }}"
+    launch_type: FARGATE
+    load_balancers:
+      - targetGroupArn: "arn:aws:elasticloadbalancing:ap-south-1:660262893273:targetgroup/dyt-react-app/ab15404432bb2e98"
+        containerName: "react-app-service-uat"
+        containerPort: "3000"
+    desired_count: 1
+    region: "ap-south-1"
+    network_configuration:
+      assign_public_ip: no
+      subnets:
+      -  "subnet-023ee41fb8653fdf8"
+      -  "subnet-03754a58cfd83bce5"
+      security_groups:
+      - "sg-0492660f656fe3665"
+

@@ -1,0 +1,346 @@
+@import '../../../Constant/color.scss';
+
+.gatedcontent-details-page {
+    min-height: 100vh;
+    max-height: fit-content;
+    background-color: $studio-background;
+
+    .details-body {
+        padding: 0 2rem;
+
+        .details-heading {
+            display: flex;
+            justify-content: space-between;
+
+            .gated-content-details {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-left: 2rem;
+            }
+
+            .details-heading-actions {
+
+                font-size: 1.2rem;
+                transform: all .2s;
+                display: flex;
+                gap: 1.5rem;
+
+                .delete-content {
+                    padding: 1rem;
+                    width: 16rem;
+                    background-color: #B40303;
+                    font-weight: 700;
+                    border: none;
+                }
+
+                .delete-content:active {
+                    transform: scale(.9);
+                }
+
+                .share-content {
+                    margin-left: 1rem;
+                    padding: 1rem;
+                    width: 16rem;
+                    background-color: $studio-primary;
+                    font-weight: 700;
+                    border: none;
+                }
+
+                .share-content:active {
+                    transform: scale(.9);
+                }
+
+                .copy-link {
+                    margin-left: 1rem;
+                    padding: 1rem;
+                    width: 16rem;
+                    background-color: $studio-primary;
+                    font-weight: 700;
+                    border: none;
+
+                }
+
+                .copy-link:active {
+                    transform: scale(.9);
+                }
+
+                .animate-charcter {
+                    padding: 1rem;
+                    font-weight: 700;
+                    border: 1px solid transparent;
+
+                    width: 16rem;
+                    background: $blue;
+                    text-transform: uppercase;
+                    background-image: linear-gradient(-225deg,
+                            #231557 0%,
+                            $studio-primary 59%,
+                            $blue 100%);
+                    background-size: auto auto;
+                    background-clip: border-box;
+                    background-size: 40% auto;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: textclip 2s linear infinite;
+                    display: inline-block;
+                    font-size: 1.5rem;
+
+                }
+
+                @keyframes textclip {
+                    to {
+                        background-position: 200% center;
+                    }
+                }
+
+            }
+        }
+
+        .display-flex {
+            display: flex;
+        }
+
+        .purchased-details {
+            margin-top: 5rem;
+            background: $dyt-logbox;
+            width: 80%;
+            // height: 29rem;
+            padding: 3rem 0 0 2rem;
+
+            .heading {
+                font-size: 1.7rem;
+                font-weight: 500;
+            }
+
+            .description {
+                width: 50%;
+                margin-top: 1.5rem;
+                color: $sub-text;
+            }
+        }
+
+        .EditIcon {
+            img {
+                width: 2rem;
+                height: 2rem;
+                margin-top: 8rem;
+                margin-left: -5rem;
+            }
+        }
+
+        .purchase-time-details {
+            margin-top: 3rem;
+        }
+
+        .content-price-container {
+            display: flex;
+            width: 25%;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+
+
+            .heading {
+                font-size: 1.3rem;
+                color: $sub-text;
+                margin-right: 5rem;
+                margin-top: .5rem;
+            }
+
+            .price {
+                font-size: 1.3rem;
+                font-weight: 600;
+                margin-top: .5rem;
+            }
+        }
+
+        .card {
+            background: none;
+            margin-top: 2.5rem;
+            margin-left: 1.5rem;
+        }
+
+        .img-fluid {
+            width: 23rem;
+            height: 28rem;
+            background: none;
+            border-radius: 0;
+            // box-shadow: 5px 5px $studio-primary;
+            box-shadow: 5px 5px 0px 0px $studio-primary;
+
+            .cover-img {
+                width: 23rem;
+                height: 28rem;
+                object-fit: cover;
+                // border: 1px solid black;
+            }
+
+            .card-title {
+                // backdrop-filter: blur(8px);
+                width: 22.5rem;
+                margin: -7px 0 0 -5px;
+                height: 5rem;
+            }
+
+            .thumbnail-Pic {
+                width: 4rem;
+                height: 4rem;
+                // filter: blur(3px);
+                // display: flex;
+
+                .card-title-image {
+                    width: 4rem;
+                    height: 4rem;
+                    object-fit: cover;
+                }
+
+                .name {
+                    margin-left: 5rem;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    width: auto;
+                    position: absolute;
+                    top: 1rem;
+                }
+
+                .pic-details {
+                    margin-left: 5rem;
+                    font-size: 1rem;
+                    color: $sub-text;
+                    position: absolute;
+                    top: 2.8rem;
+
+                }
+            }
+
+            .card-text {
+                height: 7rem;
+                width: 22.8rem;
+                // backdrop-filter: blur(3px);
+                margin: 14.6rem 0 0 -8px;
+                padding: 1rem;
+                font-size: 1rem;
+                font-weight: 600;
+                overflow: hidden;
+                // white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+        }
+    }
+
+    .footer {
+        margin-top: 10rem;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 700px) {
+
+
+        .details-body {
+            padding: 0 3rem;
+
+            .details-heading {
+                display: block;
+
+
+
+                .gated-content-details {
+
+                    margin: 9rem 0 2rem 0;
+
+                }
+
+                .details-heading-actions {
+                    font-size: .6rem;
+                    width: 32rem;
+
+                    .delete-content {
+                        width: 12rem;
+                        padding: .8rem;
+                        font-size: 1rem;
+                    }
+
+                    .share-content {
+                        width: 12rem;
+                        padding: .8rem;
+
+                    }
+
+                    .copy-link,
+                    .animate-charcter {
+                        width: 12rem;
+                        padding: .8rem;
+                        font-size: 1rem;
+
+                    }
+
+
+
+                }
+            }
+
+            .display-flex {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .card {
+                background: none;
+                margin-top: 2.5rem;
+                margin-left: 0rem;
+            }
+
+            .img-fluid {
+                width: 29rem;
+                height: 36rem;
+
+                .cover-img {
+                    width: 29rem;
+                    height: 36rem;
+                    object-fit: cover;
+                    // border: 1px solid black;
+                }
+
+                .card-title {
+                    width: 22.5rem;
+                    margin: -7px 0 0 -5px;
+                    height: 5rem;
+                }
+            }
+
+            .purchased-details {
+                width: 100%;
+                height: fit-content;
+                padding: 2rem;
+
+
+                .description {
+                    width: 28rem;
+                    margin-top: 1.5rem;
+                    color: $sub-text;
+                }
+            }
+
+            .content-price-container {
+                display: flex;
+                width: 76%;
+                justify-content: space-between;
+
+
+                .heading {
+                    font-size: 1.3rem;
+                    color: $sub-text;
+                    margin-right: 9rem;
+                    margin-top: .5rem;
+                }
+
+                .price {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    margin-top: .5rem;
+                }
+            }
+        }
+    }
+}

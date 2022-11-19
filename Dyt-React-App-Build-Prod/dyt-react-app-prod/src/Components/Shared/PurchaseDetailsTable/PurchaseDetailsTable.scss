@@ -1,0 +1,103 @@
+@import '../../../Constant/color.scss';
+
+
+.PurchaseDetailsTable {
+    .heading {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 7rem 0 0 0rem;
+    }
+
+    .purchase-details {
+        width: 100%;
+        margin-top: 2rem;
+
+    }
+
+    .purchase-details td,
+    .purchase-details th {
+        font-size: 1.4rem;
+    }
+
+    .purchase-details th {
+        padding: 1.5rem 10rem;
+        background-color: rgba(70, 45, 73, 0.4);
+        height: fit-content;
+        text-align: center;
+    }
+
+    .purchase-details td,
+    .purchase-details div {
+        padding: 1rem 1rem 0rem 0rem;
+        border-bottom: 1px solid #443B4E;
+        text-align: center;
+
+    }
+
+    .purchase-details tr {
+        margin-top: 2rem;
+    }
+
+    .user-icon {
+        width: 24rem;
+        height: 5rem;
+    }
+
+    .userAvatar {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        text-align: center;
+        margin-left: 0rem;
+        // margin-right: 2rem;
+    }
+
+    .purchase-details .table-body:hover {
+        background-color: $dyt-logbox;
+    }
+
+    .purchase-details-reps {
+        display: none;
+    }
+
+    .table-body .table-image {
+        display: flex;
+    }
+
+    @media screen and (min-width: 300px) and (max-width:700px) {
+        .purchase-details {
+            width: 100%;
+            margin-top: 2rem;
+            display: none;
+        }
+
+        .purchase-details th {
+            display: none;
+        }
+
+        .purchase-details-reps {
+            display: block;
+            width: 100%;
+            background: $dyt-logbox;
+            font-size: 1.5rem;
+            height: fit-content;
+            padding: 1.5rem;
+            margin-top: 2rem;
+
+            .user-name {
+                font-size: 1.7rem;
+                color: $sub-text;
+                margin-left: 1rem;
+                font-weight: 500;
+                margin-bottom: 2rem;
+            }
+
+            .details-row {
+                margin-bottom: 1.2rem;
+            }
+
+        }
+
+    }
+}

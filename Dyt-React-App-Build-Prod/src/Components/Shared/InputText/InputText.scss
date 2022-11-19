@@ -1,0 +1,54 @@
+@import "../../../Constant/color.scss";
+
+.InputFields {
+    .input-field {
+        display: flex;
+        width: 21rem;
+        height: 4rem;
+        outline: none;
+        border-radius: 5px;
+        background: $input-bg;
+        padding: .9rem;
+        font-size: 1.2rem;
+        color: $white;
+        border: none;
+        font-family: $font-family;
+        font-style: $font-style;
+
+    }
+
+    .validation {
+        color: $warning-text;
+        font-size: 1rem;
+        font-family: $font-family;
+        text-align: left;
+        margin-bottom: 0%;
+        margin-left: 1%;
+        font-style: $font-style;
+        display: block;
+
+    }
+
+    .error-msg {
+        color: $warning-text;
+        font-size: 1rem;
+        font-family: $font-family;
+        text-align: left;
+        // margin-bottom: 0%;
+        // margin-left: 1%;
+        font-style: $font-style;
+        display: none;
+    }
+
+    input:invalid[focused="true"] {
+        border: 1px solid $warning-text;
+    }
+
+    input:invalid[focused="true"]~span {
+        display: block;
+    }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+}

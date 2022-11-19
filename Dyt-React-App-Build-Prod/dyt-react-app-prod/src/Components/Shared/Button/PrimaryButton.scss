@@ -1,0 +1,79 @@
+@import '../../../Constant/color.scss';
+
+
+.shared-primary-button {
+    .btn-holder {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .primary-button {
+        background: $studio-primary;
+        color: $white;
+        font-weight: 700;
+        width: 21rem;
+        height: 4rem;
+        border-radius: 4px;
+        font-family: $font-family;
+        transform: all 0.3s;
+        border: none;
+        font-style: $font-style;
+        font-size: 1.3rem;
+        cursor: pointer;
+
+    }
+
+    // .primary-button:hover {
+    //     animation: shine 1s infinite;
+    // }
+
+    .primary-button:active {
+        transform: scale(.9);
+    }
+
+    .primary-button-navigate-back:active {
+        transform: scale(.9);
+    }
+
+    .primary-button-navigate-back {
+        background: $studio-primary;
+        color: $white;
+        font-weight: 700;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 4px;
+        font-family: $font-family;
+        transform: all 0.3s;
+        border: none;
+        font-style: $font-style;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    // @keyframes shine {
+
+    //     100% {
+    //         left: (200%);
+    //     }
+    // }
+    a {
+        width: 100%;
+    }
+
+    @media (max-width: 700px) {
+
+        // .shared-primary-button {
+        a {
+            width: 100%;
+        }
+
+        .primary-button {
+            width: 100%;
+            font-size: 1.2rem;
+            // height: 4rem;
+            padding: 0 0.5rem;
+        }
+
+        // }
+    }
+}

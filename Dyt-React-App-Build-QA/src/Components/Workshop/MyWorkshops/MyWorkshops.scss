@@ -1,0 +1,80 @@
+@import '../../../Constant/color.scss';
+
+.workshops-list {
+    background-color: black;
+    height: fit-content;
+
+    .my-workshops-body {
+        padding: 2rem 2rem 2rem 2.8rem;
+        min-height: 90vh;
+        max-height: fit-content;
+    }
+
+    .create-btn {
+        background-color: $studio-secondary;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        transform: all .2s;
+        width: 23rem;
+        margin-left: auto;
+        border: none;
+    }
+
+    .create-btn:active {
+        transform: scale(.9);
+    }
+
+    .heading-text {
+        display: flex;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .WorkshopList_card-list-layout {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4.5rem;
+    }
+
+    .Noworkshops {
+        text-align: center;
+        align-items: center;
+        margin: 18rem 0;
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width:300px) and (max-width: 600px) {
+        .heading-text {
+            display: block;
+            margin-bottom: 2rem;
+            padding: 0 1rem;
+        }
+
+        .create-btn {
+            width: 100%;
+            margin-left: -0.5rem;
+            border: none;
+            margin-top: 2rem;
+        }
+
+        .create-btn:active {
+            transform: scale(.9);
+        }
+
+        .WorkshopList_card-list-layout {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        // .Noworkshops {
+        //     text-align: center;
+        //     align-items: center;
+        //     margin: 2rem 0;
+        //     font-size: 1.5rem;
+        // }
+    }
+}
