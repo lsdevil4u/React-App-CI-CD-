@@ -4,11 +4,11 @@
 - name: Create task definition
   ecs_taskdefinition:
     family: "react-app-service-uat-taskdef"
-    execution_role_arn: "arn:aws:iam::660262893273:role/FargateECSRole"
+    execution_role_arn: "arn:aws:iam::660262857895:role/FargateECSRole"
     containers:
     - name: "react-app-service-uat"
       essential: true
-      image: "660262893273.dkr.ecr.ap-south-1.amazonaws.com/dyt-react-app-qa:{{ DOCKER_VERSION }}"
+      image: "660262878256.dkr.ecr.ap-south-1.amazonaws.com/dyt-react-app-qa:{{ DOCKER_VERSION }}"
       portMappings:
       - containerPort: 3000
         hostPort: 3000
@@ -40,7 +40,7 @@
     task_definition: "{{ active_taskdefinition.family}}:{{ active_taskdefinition.revision }}"
     launch_type: FARGATE
     load_balancers:
-      - targetGroupArn: "arn:aws:elasticloadbalancing:ap-south-1:660262893273:targetgroup/dyt-react-app/ab15404432bb2e98"
+      - targetGroupArn: "arn:aws:elasticloadbalancing:ap-south-1:660262878459:targetgroup/dyt-react-app/ab15404432bb2e98"
         containerName: "react-app-service-uat"
         containerPort: "3000"
     desired_count: 1
@@ -48,8 +48,8 @@
     network_configuration:
       assign_public_ip: no
       subnets:
-      -  "subnet-023ee41fb8653fdf8"
-      -  "subnet-03754a58cfd83bce5"
+      -  "subnet-023ee41fb8653fdd8"
+      -  "subnet-03754a58cfd83bct5"
       security_groups:
-      - "sg-0492660f656fe3665"
+      - "sg-0492660f656fe2545"
 
